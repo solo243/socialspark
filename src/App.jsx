@@ -13,7 +13,7 @@ const App = () => {
       <Navbar />
       <Home />
       <Services />
-      <About />
+      {/* <About /> */}
     </div>
     // </LocomotiveScrollProvider>
 
