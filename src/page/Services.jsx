@@ -1,11 +1,12 @@
 import { VelocityScroll } from '@/components/ui/scroll-based-velocity'
 import React from 'react'
-import S1 from '../assets/S1.png'
-import S2 from '../assets/S2.png'
-import S3 from '../assets/S3.png'
-import S4 from '../assets/S4.png'
-import S5 from '../assets/S5.png'
-import S6 from '../assets/S6.png'
+import S1 from '../assets/web.svg'
+import S2 from '../assets/seo.svg'
+import S3 from '../assets/mobile.svg'
+import S4 from '../assets/l1.svg'
+import S5 from '../assets/logo.svg'
+import S6 from '../assets/marketing.svg'
+import { LucideWebhookOff, Webcam } from 'lucide-react'
 
 
 
@@ -56,13 +57,37 @@ const Services = () => {
         },
     ]
     return (
-        <section id='services' className=' '>
+        <section id='services' className='relative '>
+            <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
             <VelocityScroll
-                text=" · Best Digital Marketing Services"
-                default_velocity={4}
-                className="bg-slate-900 text-white font-[600] lg:text-5xl text-2xl  p-4 lg:p-6"
+                text=" ✦ Digital Marketing ✦ App Development ✦ Search Engine Optimization ✦ Web Development "
+                default_velocity={2}
+                className="bg-slate-900  text-white font-[600] lg:text-5xl text-2xl  p-4 lg:p-6"
             />
-            <div className='px-4 pb-10'>
+            <div className='px-4 w-full pb-10'>
+                <div className='flex-col flex  text-center mx-auto max-w-[700px]'>
+                    <h1 className='text-slate-800 font-[700] text-center lg:pt-14 pt-10 text-3xl lg:text-5xl'>
+                        Explore Our Services Portfolio
+                    </h1>
+                    <p className='text-slate-600 lg:pt-5 pt-3'>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti nemo eum deserunt accusamus tempore recusandae consectetur, natus totam adipisci voluptas!
+                    </p>
+                </div>
+                <div className='grid lg:grid-cols-3 lg:px-10 px-5 md:grid-cols-2 gap-5 mt-10 mx-auto max-w-[1200px] '>
+                    {Content.map((item) => (
+                        <div className="text-center px-3 py-3 border-2 border-slate-600 rounded-lg max-w-[400px] mx-auto">
+                            <div className='flex flex-col items-center'>
+                                <img src={item.img} alt="" className='w-12 h-12' />
+                                <h1 className='text-xl mt-3 text-slate-800 pb-1 font-[650]'>{item.label}t</h1>
+                                <p className='text-slate-800 line-clamp-3'>
+                                    {item.content}
+                                </p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            {/* <div className='px-4 pb-10'>
                 <div className='flex-col flex  text-center mx-auto max-w-[700px]'>
                     <h1 className='text-slate-900 font-[700] text-center lg:pt-14 pt-10 text-3xl lg:text-5xl'>
                         Explore Our Services Portfolio
@@ -73,7 +98,16 @@ const Services = () => {
                 </div>
                 <div className='grid lg:grid-cols-3 lg:px-10 px-5 md:grid-cols-2 gap-5 mt-10 mx-auto max-w-[1200px] '>
                     {Content.map((item) => (
-                        <div className='mx-auto hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] border-2 flex flex-col max-w-[400px]  h-full space-y-4 text-center bg-gray-100 p-6 cursor-pointer hover:scale-105 transition-transform rounded-lg  border-slate-900 items-center justify-center'>
+                        <div className='mx-auto
+                         hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] 
+                         dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] 
+                         border-2 flex flex-col max-w-[400px] 
+                          h-full space-y-4 text-center 
+                          bg-gray-100 p-6
+                           cursor-pointer 
+                           hover:scale-105
+                            transition-transform rounded-lg  
+                            border-slate-900 items-center justify-center'>
                             <div className='flex flex-col items-center'>
                                 <img src={item.img} alt="" className='w-36 h-32' />
                                 <h1 className='text-xl mt-3 text-slate-900 pb-1 font-[650]'>{item.label}t</h1>
@@ -84,7 +118,7 @@ const Services = () => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> */}
         </section>
     )
 }
