@@ -5,6 +5,7 @@ import Navbar from './components/comp/Navbar'
 import Services from './page/Services'
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import About from './page/About'
+import Footer from './page/Footer'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Navbar />
       <Home />
       <Services />
+      <Footer />
       {/* <About /> */}
     </div>
     // </LocomotiveScrollProvider>

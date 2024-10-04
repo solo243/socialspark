@@ -9,7 +9,7 @@ const Home = () => {
 
     const word = [
         {
-            "text": "We are "
+            "text": "We are"
         }
     ]
     const Lables = [
