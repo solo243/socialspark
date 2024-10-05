@@ -14,11 +14,9 @@ const App = () => {
       <Navbar />
       <Home />
       <Services />
+      <About />
       <Footer />
-      {/* <About /> */}
     </div>
-    // </LocomotiveScrollProvider>
-
   )
 }
 

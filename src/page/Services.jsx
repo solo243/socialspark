@@ -75,7 +75,8 @@ const Services = () => {
                 </div>
                 <div className='grid lg:grid-cols-3 lg:px-10 px-5 md:grid-cols-2 gap-5 mt-10 mx-auto max-w-[1200px] '>
                     {Content.map((item) => (
-                        <div className="text-center px-3 py-3 border-2 border-slate-600 rounded-lg max-w-[400px] mx-auto">
+                        <div className="text-center px-3 py-3 hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] 
+ border-2 border-slate-600 rounded-lg max-w-[400px] mx-auto">
                             <div className='flex flex-col items-center'>
                                 <img src={item.img} alt="" className='w-12 h-12' />
                                 <h1 className='text-xl mt-3 text-slate-800 pb-1 font-[650]'>{item.label}t</h1>
